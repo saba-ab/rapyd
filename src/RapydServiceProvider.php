@@ -2,9 +2,9 @@
 
 namespace Sabaab\Rapyd;
 
+use Sabaab\Rapyd\Commands\RapydCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Sabaab\Rapyd\Commands\RapydCommand;
 
 class RapydServiceProvider extends PackageServiceProvider
 {
