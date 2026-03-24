@@ -2,6 +2,12 @@
 
 All notable changes to `rapyd` will be documented in this file.
 
+## 1.1.0 - 2026-03-24
+
+- Add Laravel 13 support
+- Add Pest 4 and Orchestra Testbench 11 support
+- Widen dependency constraints for pestphp/pest-plugin-arch and pestphp/pest-plugin-laravel
+
 ## 1.0.0 - 2026-03-24
 
 - Initial release

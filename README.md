@@ -21,7 +21,7 @@ A full-featured Laravel package for the Rapyd fintech API covering payments, pay
 ## Requirements
 
 - PHP 8.2+
-- Laravel 10.x, 11.x, or 12.x
+- Laravel 11.x, 12.x, or 13.x
 - Rapyd API keys (get them at [dashboard.rapyd.net](https://dashboard.rapyd.net))
 
 ## Installation

@@ -16,7 +16,7 @@ Before writing any code, read `RAPYD_LARAVEL_SDK_PRD.md` in the project root. It
 
 ## Tech Stack
 - PHP 8.2+ (use constructor promotion, readonly, enums, match, named args)
-- Laravel 10/11/12 (use Http facade, not raw Guzzle)
+- Laravel 11/12/13 (use Http facade, not raw Guzzle)
 - **`spatie/laravel-package-tools`** — ServiceProvider base class. Handles config, routes, commands registration
 - **`orchestra/testbench`** — Boots a real Laravel app for package tests
 - **Pest PHP** — Test framework (Spatie skeleton default, Laravel 11+ is Pest-first)
