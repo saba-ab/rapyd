@@ -1,12 +1,12 @@
 <?php
 
-namespace VendorName\Skeleton\Commands;
+namespace Sabaab\Rapyd\Commands;
 
 use Illuminate\Console\Command;
 
-class SkeletonCommand extends Command
+class RapydCommand extends Command
 {
-    public $signature = 'skeleton';
+    public $signature = 'rapyd';
 
     public $description = 'My command';
 
