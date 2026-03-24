@@ -2,21 +2,12 @@
 
 namespace Sabaab\Rapyd\Tests;
 
-use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
+use Sabaab\Rapyd\Facades\Rapyd;
 use Sabaab\Rapyd\RapydServiceProvider;
 
 class TestCase extends Orchestra
 {
-    protected function setUp(): void
-    {
-        parent::setUp();
-
-        Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'Sabaab\\Rapyd\\Database\\Factories\\'.class_basename($modelName).'Factory'
-        );
-    }
-
     protected function getPackageProviders($app)
     {
         return [
@@ -24,14 +15,17 @@ class TestCase extends Orchestra
         ];
     }
 
-    public function getEnvironmentSetUp($app)
+    protected function getPackageAliases($app)
     {
-        config()->set('database.default', 'testing');
+        return [
+            'Rapyd' => Rapyd::class,
+        ];
+    }
 
-        /*
-         foreach (\Illuminate\Support\Facades\File::allFiles(__DIR__ . '/../database/migrations') as $migration) {
-            (include $migration->getRealPath())->up();
-         }
-         */
+    protected function defineEnvironment($app)
+    {
+        $app['config']->set('rapyd.access_key', 'rak_test_1234567890');
+        $app['config']->set('rapyd.secret_key', 'rsk_test_abcdefghij');
+        $app['config']->set('rapyd.sandbox', true);
     }
 }
