@@ -7,7 +7,7 @@
         "rapyd"
     ],
     "homepage": "https://github.com/saba-ab/rapyd",
-    "license": "MIT",
+    "license": "AGPL-3.0-only",
     "authors": [
         {
             "name": "saba-ab",
