@@ -2,6 +2,13 @@
 
 All notable changes to `rapyd` will be documented in this file.
 
+## v1.2.0 - 2026-04-06
+
+### Changes
+
+- **License changed from MIT to AGPL-3.0** — the package is now licensed under the GNU Affero General Public License v3
+- Updated `composer.json` license field
+
 ## 1.1.0 - 2026-03-24
 
 - Add Laravel 13 support
